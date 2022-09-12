@@ -116,11 +116,12 @@ header.header-nav-top{
     margin-left: 17px;
     font-size:20px;
 }
-.price-promotion span{
+span{
     display: block;
     margin-top:20px;
     font-size: 13px;
     line-height: 21px;
+    color: silver;
 }
 .btn-assine{
     display: block;
@@ -132,6 +133,11 @@ header.header-nav-top{
     background-color: #016CF9;
     margin-top: 20px;
     font-size: 19px;
+    transition: .4s;
+}
+.btn-assine:hover{
+    background-color: #0154f9;
+
 }
 .svg-scroll{
     margin-top: 30px;
@@ -157,9 +163,9 @@ header.header-nav-top{
 /*--------------------------plans------------------------*/
 .container-plans{
     margin-top: 80px;
+    text-align: center;
 }
 .container-plans h2{
-    text-align: center;
     font-size:41px;
 }
 .content-plans{
@@ -213,6 +219,11 @@ header.header-nav-top{
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    transition: .4s;
+}
+.plan-link:hover{
+    background-color:#7a21ff;
+    
 }
 /*--------------------------plans------------------------*/
 
@@ -237,6 +248,9 @@ header.header-nav-top{
     .btn-assine{
         margin: 20px auto 0;
     }
+    .container-plans{
+        margin-top: 330px;
+    }
 }
 
 @media screen and (max-width:900px){
@@ -252,15 +266,25 @@ header.header-nav-top{
     .container-banner{
         background-size: contain;
     }
+    .container-plans{
+        margin-top: 180px;
+    }
 }
 @media screen and (max-width:700px){
     .txt-banner{
         top: 30vh;
     }
+    .plan{
+        width: 60%;
+        margin-bottom: 50px;
+    }
 }
 @media screen and (max-width:600px){
     .txt-banner{
         top: 25vh;
+    }
+    .plan{
+        width: 70%;
     }
 }
 @media screen and (max-width:500px){
@@ -271,6 +295,9 @@ header.header-nav-top{
     .btn-assine{
         width: 100%;
     }
+    .plan{
+        width: 80%;
+    }
 }
 @media screen and (max-width:400px){
     .txt-banner{
@@ -279,6 +306,12 @@ header.header-nav-top{
     .day-promotion{
         flex-direction: column;
         justify-content: center;
+    }
+    .container-plans{
+        margin-top: 300px;
+    }
+    .plan{
+        width: 90%;
     }
 }
 @media screen and (max-width:300px) {
