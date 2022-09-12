@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Avenir;
+}
+@font-face {
+    font-family: Avenir;
+    src: url('/fonts/AvenirLTStd-Book.otf');
+}
+body, html{
+    height: 100%;
+    background-color: #040714;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+ul,li{ list-style-type: none}
+.center{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.c-white{ color: white; }
+a,h1,h2,h3,h4,h5,h6,p,span{
+    color: #f9f9f9;
+}
+/*-------------navegation-----------*/
+
+header.header-nav-top{
+    width: 100%;
+    position: fixed;
+}
+.navbar {
+    width: 100%;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    opacity: 1;
+    transform: translateZ(0);
+    transition: opacity 0.5s ease-out;
+}
+
+.pre-sticky {
+    z-index: 3;
+    background-color: transparent;
+    opacity: 1;
+    justify-content: flex-end;
+}
+.entrar-nav{
+    display: block;
+    padding: 12px 17px;
+    font-size:19px;
+    font-weight: 590;
+    transition: .4s;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.79);
+    border-radius:5px;
+    
+}
+.link-primary{
+    border: 1px solid white;
+}
+.link-primary:hover{
+    background-color: white;
+    color: black;
+}
+.pos-sticky{
+    display:none;
+}
+/*-------------navegation-----------*/
+
+
+/*--------------------banner-------------*/
+
+.container-banner{
+    width: 100%;
+    height: 850px;
+    background-image: url(/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-size: cover;
+}
+.txt-banner{
+    width: 600px;
+    position: absolute;
+    top: 90px;
+    left:80px;
+}
+.txt-banner h2, .price-promotion h2{
+    font-size: 41px;
+    font-weight: 700;
+}
+.day-promotion{
+    margin-top:20px;
+    display: flex;
+}
+.day-promotion img{
+    width: 130px;
+}
+.day-promotion li p{
+    color: #00C8F5;
+    font-size: 20px;
+    margin: 39px 0 0 25px;
+}
+.price-promotion{
+    margin-top:20px;
+}
+.price-promotion h2, .price-promotion p{
+    display: inline-block;
+}
+.price-promotion p{
+    margin-left: 17px;
+    font-size:20px;
+}
+.price-promotion span{
+    display: block;
+    margin-top:20px;
+    font-size: 13px;
+    line-height: 21px;
+}
+.btn-assine{
+    display: block;
+    width: 360px;
+    border-radius: 5px;
+    text-align: center;
+    color:#f9f9f9;
+    padding: 18px;
+    background-color: #016CF9;
+    margin-top: 20px;
+    font-size: 19px;
+}
+.svg-scroll{
+    margin-top: 30px;
+    animation-name: svg-scroll;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes svg-scroll {
+    0%{
+        margin-top: 30px;
+    }
+    50%{
+        margin-top: 45px;
+    }
+    100%{
+        margin-top: 30px;
+    }
+}
+
+/*--------------------------banner------------*/
+
+/*--------------------------plans------------------------*/
+.container-plans{
+    margin-top: 80px;
+}
+.container-plans h2{
+    text-align: center;
+    font-size:41px;
+}
+.content-plans{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.plan{
+    width: 30%;
+    height: 400px;
+    position: relative;
+}
+.plan-rsc{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+.plan-rsc img{
+    width: 100%;
+    margin-top: 50px;
+}
+.plan2-rsc{
+    background-image: url("https://cnbl-cdn.bamgrid.com/assets/56773c66e02b16eb7603c803037f43e8572ea3a61574abd664f409a385a0b333/original");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.plan-txt {
+    width: 90%;
+    padding: 0 2%;
+    text-align: center;
+    margin: 20px auto 0;
+}
+.plan-txt h3{
+    font-size: 28px;
+}
+.plan-txt p{
+    font-size: 18px;
+    margin-top: 10px;
+    color: silver;
+}
+.plan nav{
+    margin-top: 0px;
+}
+.plan-link{
+    display: block;
+    padding: 18px;
+    background-color:#6421ff;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+/*--------------------------plans------------------------*/
+
+
+
+
+@media screen and (max-width:1100px){
+    .container-banner{
+        background-image: url('https://cnbl-cdn.bamgrid.com/assets/c228957660a1a582f4f54037ee62a83d045c97feb319117099d849cdfab53aa9/original')
+    }
+    .txt-banner{
+        width: 60%;
+        position: relative;
+        top: 500px;
+        left: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .txt-banner h2{
+        font-size: 30px;
+    }
+    .btn-assine{
+        margin: 20px auto 0;
+    }
+}
+
+@media screen and (max-width:900px){
+    .txt-banner{
+        width: 70%;
+    }
+}
+@media screen and (max-width:800px){
+    .txt-banner{
+        width: 80%;
+        top: 35vh;
+    }
+    .container-banner{
+        background-size: contain;
+    }
+}
+@media screen and (max-width:700px){
+    .txt-banner{
+        top: 30vh;
+    }
+}
+@media screen and (max-width:600px){
+    .txt-banner{
+        top: 25vh;
+    }
+}
+@media screen and (max-width:500px){
+    .txt-banner{
+        width: 90%;
+        top: 20vh;
+    }
+    .btn-assine{
+        width: 100%;
+    }
+}
+@media screen and (max-width:400px){
+    .txt-banner{
+        top: 15vh;
+    }
+    .day-promotion{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:300px) {
+    .txt-banner{
+        top: 10vh;
+    }
+}
