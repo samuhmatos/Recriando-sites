@@ -16,6 +16,9 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
+img{
+    outline: none;
+}
 ul,li{ list-style-type: none}
 .center{
     width: 100%;
@@ -230,15 +233,12 @@ span{
 
 /*--------------------------where------------------------*/
 
-.container-prop{
-    margin-top: 170px;
-}
-
 .content-where{
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
     align-items: center;
+    margin: 170px auto;
 }
 .where{
     width: 49%;
@@ -246,17 +246,35 @@ span{
 .where img {
     width: 100%;
 }
-.where-txt h2 {
+.where-txt h2, .container-contents h2{
     font-size: 41px;
+    line-height: 50px;
 }
-.where-txt p{
+.where-txt p, .container-contents p{
     font-size: 21px;
     color: silver;
 }
 /*--------------------------where------------------------*/
 
+/*--------------------------contents-galley------------------------*/
 
-
+.container-contents{
+    text-align: center;
+}
+.contents-gallery{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.movie{
+    width: 30%;
+    margin-bottom: 25px;
+}
+.movie img{
+    width: 100%;
+}
+/*--------------------------contents-galley------------------------*/
 
 
 
@@ -318,6 +336,10 @@ span{
     }
     .where p{
         margin-top: 30px;
+    }
+    .movie{
+        width: 45%;
+        margin-bottom: 25px;
     }
 }
 @media screen and (max-width:600px){
