@@ -275,8 +275,39 @@ span{
     width: 100%;
 }
 /*--------------------------contents-galley------------------------*/
-
-
+/*--------------------------king lion-----------------------*/
+.container-king-lion{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 170px auto;
+}
+.king-lion{
+    position: relative;
+}
+.king-lion img{
+    width: 100%;
+}
+.king-txt{
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    width: 500px;
+}
+.king-lion h3{
+    font-size: 28px;
+    line-height: 28px   ;
+}
+.king-lion p{
+    font-size:18px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+.king-second{
+    display: none;
+}
+/*--------------------------king lion-----------------------*/
 
 @media screen and (max-width:1100px){
     .container-banner{
@@ -299,11 +330,25 @@ span{
     .container-plans{
         margin-top: 330px;
     }
+    .king-txt{
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        transform: translateY(-50%);
+        width: 500px;
+    }
 }
 
 @media screen and (max-width:900px){
     .txt-banner{
         width: 70%;
+    }
+    .king-txt{
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        width: 450px;
     }
 }
 @media screen and (max-width:800px){
@@ -316,6 +361,13 @@ span{
     }
     .container-plans{
         margin-top: 180px;
+    }
+    .king-txt{
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        width: 450px;
     }
 }
 @media screen and (max-width:700px){
@@ -340,6 +392,31 @@ span{
     .movie{
         width: 45%;
         margin-bottom: 25px;
+    }
+
+    .king-lion img{
+        width: 100%;
+    }
+    .king-lion img:first-of-type{
+        display: none;
+    }
+    .king-txt{
+        position: relative;
+        width: 90%;
+        margin: 80px auto;
+        text-align: center;
+    }
+    .king-lion h3{
+        font-size: 28px;
+        line-height: 28px   ;
+    }
+    .king-lion p{
+        font-size:18px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+    .king-second{
+        display: block;
     }
 }
 @media screen and (max-width:600px){
@@ -375,6 +452,12 @@ span{
     }
     .plan{
         width: 90%;
+    }
+    .king-txt{
+        position: relative;
+        width: 90%;
+        margin: 120px auto 0;
+        text-align: center;
     }
 }
 @media screen and (max-width:300px) {
