@@ -93,7 +93,8 @@ header.header-nav-top{
     top: 90px;
     left:80px;
 }
-.txt-banner h2, .price-promotion h2{
+.txt-banner h2, .price-promotion h2, 
+.container-faq h2{
     font-size: 41px;
     font-weight: 700;
 }
@@ -336,6 +337,53 @@ span{
     color: silver;
 }
 /*--------------------------devices-----------------------*/
+
+/*--------------------------faq-----------------------*/
+
+.container-faq h2{
+    text-align: center;
+}
+.faq{
+    width: 100%;
+    color: silver;
+    margin: 20px auto;
+}
+.btn-faq{
+    width: 100%;
+   background-color: #13151d;
+    border: none;
+    cursor: pointer;
+    text-align: inherit;
+    padding: 24px;
+}
+.btn-faq h4 {
+    font-size: 18px;
+    display: inline-block;
+}
+svg{
+    transition: .5s;
+    stroke: white;
+    stroke-width:2;
+    margin: 0 5px;
+    float: right;
+}
+.svg-none{
+    display: none;
+}
+.faq-toggle{
+    padding: 24px;
+    background-color: #13151d;
+    display: none;
+}
+.faq-toggle p{
+    margin-bottom: 20px;
+}
+.list-faq li{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+/*--------------------------faq-----------------------*/
+
 
 @media screen and (max-width:1100px){
     .container-banner{
