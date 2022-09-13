@@ -38,7 +38,7 @@ header.header-nav-top{
 }
 .navbar {
     width: 100%;
-    z-index: 4;
+    z-index: 7;
     display: flex;
     align-items: center;
     padding: 10px 40px;
@@ -48,7 +48,7 @@ header.header-nav-top{
 }
 
 .pre-sticky {
-    z-index: 3;
+    z-index: 4;
     background-color: transparent;
     opacity: 1;
     justify-content: flex-end;
@@ -203,7 +203,7 @@ span{
     text-align: center;
     margin: 20px auto 0;
 }
-.plan-txt h3{
+.plan-txt h3, .devices li h3{
     font-size: 28px;
 }
 .plan-txt p{
@@ -246,7 +246,7 @@ span{
 .where img {
     width: 100%;
 }
-.where-txt h2, .container-contents h2{
+.where-txt h2, .container-contents h2, .container-viewport h2 {
     font-size: 41px;
     line-height: 50px;
 }
@@ -287,6 +287,7 @@ span{
 }
 .king-lion img{
     width: 100%;
+    z-index: 0;
 }
 .king-txt{
     position: absolute;
@@ -308,6 +309,33 @@ span{
     display: none;
 }
 /*--------------------------king lion-----------------------*/
+
+
+/*--------------------------devices-----------------------*/
+
+.container-viewport{
+    text-align: center;
+    margin-bottom: 170px;
+}
+
+.devices{
+    display: flex;
+    flex-wrap: wrap;
+}
+.devices li{
+    width: 25%;
+    margin-top: 50px;
+}
+.devices li img{
+    width: 100%;
+}
+.devices li p{
+    margin-top:20px;
+    line-height: 25px;
+    font-size:18px;
+    color: silver;
+}
+/*--------------------------devices-----------------------*/
 
 @media screen and (max-width:1100px){
     .container-banner{
@@ -418,6 +446,9 @@ span{
     .king-second{
         display: block;
     }
+    .devices li{
+        width: 50%;
+    }
 }
 @media screen and (max-width:600px){
     .txt-banner{
@@ -463,5 +494,8 @@ span{
 @media screen and (max-width:300px) {
     .txt-banner{
         top: 10vh;
+    }
+    .devices li{
+        width: 100%;
     }
 }
