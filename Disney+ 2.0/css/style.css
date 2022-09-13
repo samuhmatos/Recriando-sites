@@ -228,6 +228,36 @@ span{
 /*--------------------------plans------------------------*/
 
 
+/*--------------------------where------------------------*/
+
+.container-prop{
+    margin-top: 170px;
+}
+
+.content-where{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+}
+.where{
+    width: 49%;
+}
+.where img {
+    width: 100%;
+}
+.where-txt h2 {
+    font-size: 41px;
+}
+.where-txt p{
+    font-size: 21px;
+    color: silver;
+}
+/*--------------------------where------------------------*/
+
+
+
+
 
 
 @media screen and (max-width:1100px){
@@ -277,6 +307,17 @@ span{
     .plan{
         width: 60%;
         margin-bottom: 50px;
+    }
+    .content-where{
+        justify-content: center;
+    }
+    .where{
+        width: 90%;
+        text-align: center;
+        margin-bottom:30px;
+    }
+    .where p{
+        margin-top: 30px;
     }
 }
 @media screen and (max-width:600px){
